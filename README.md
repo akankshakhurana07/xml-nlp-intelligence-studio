@@ -4,7 +4,11 @@ A **professional-grade Natural Language Processing (NLP) application** built usi
 This project demonstrates a complete **NLP processing pipeline**, modern UI design, and deployable architecture suitable for **academic, research, and industry use cases**.
 
 ---
+## 🚀 Live Demo
 
+👉 Try the deployed application here:  
+https://xml-nlp-intelligence-studio-itwpffbcmfdverkgdfjxh7.streamlit.app/
+---
 ## 📌 Project Overview
 
 XML NLP Intelligence Studio extracts textual data from XML files and applies multiple NLP techniques including preprocessing, linguistic annotation, vectorization, and visualization.  
