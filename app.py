@@ -90,6 +90,7 @@ from wordcloud import WordCloud
 # ================= NLTK DOWNLOADS =================
 for pkg in [
     "punkt",
+    "punkt_tab"
     "stopwords",
     "averaged_perceptron_tagger",
     "wordnet",
@@ -121,7 +122,12 @@ if uploaded_file:
     text = re.sub(r"\s+", " ", text)
 
     # ---------- TOKENIZATION ----------
-    sentences = sent_tokenize(text)
+    try:
+        sentences = sent_tokenize(text)
+    except LookupError:
+        nltk.download("punkt_tab")
+        sentences = sent_tokenize(text)
+
     words = word_tokenize(text.lower())
 
     # ---------- STOPWORDS ----------
